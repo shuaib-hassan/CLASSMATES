@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f2d2d;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0f2d2d;
+  color: red;
+  padding: 10px 0;
+  text-align: center;
+  font-size: medium;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.wrapper {
+  /* Add any styles here if needed */
+}
+
+input:checked + .slider {
+  background-color: #0fbcf9;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider:after {
+  content: "🌙";
+  position: absolute;
+  left: 4px;
+  top: 46%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+input:checked + .slider:after {
+  content: "☀️";
+  left: 31px;
+  top: 16px;
+  opacity: 1;
+}
+
+.container {
+  background-color: #006eff;
+  display: flex;
+  gap: 10px;
+  break-after: always;
+  text-transform: lowercase;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center; /* Center them */
+  max-width: 800px; /* Prevents cards from spreading too wide */
+  margin: 50px auto; /* Center the container */
+  padding: 20px;
+}
+
+/* Individual Cards */
+.card {
+  background: #e0ff4f;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  row-gap: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border: 2px solid #000; /* Optional: Add border for clearer separation */
+}
+
+/* Add Equal Spacing After Each Card */
+.card:not(:last-child) {
+  margin-bottom: 40px; /* Ensures space after EVERY card */
+}
+
+/* Card Content */
+.card h3 {
+  color: red;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
